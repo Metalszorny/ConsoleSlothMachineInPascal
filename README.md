@@ -7,6 +7,11 @@ About:
 - A three symbols slot machine console game with beting.
 
 
+Used languages:
+---------------
+- Pascal
+
+
 Features:
 ---------
 - Console
