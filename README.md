@@ -1,5 +1,5 @@
 # felkaru_rablo
-===============
+---------------
 
 
 About:
@@ -14,7 +14,7 @@ Used languages:
 
 Features:
 ---------
-- Console
+- Console Application
 
 
 Enviroment:

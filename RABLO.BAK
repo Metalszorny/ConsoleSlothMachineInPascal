@@ -1,43 +1,43 @@
 program felkaru_rablo;
 uses crt;
-var a:integer;
-b:integer;
-c:integer;
-penz:integer;
-szoveg:string;
+var firstFruit:integer;
+secondFruit:integer;
+thirdFruit:integer;
+money:integer;
+input:string;
 begin
 textbackground(10);
 textcolor(black);
-penz:=500;
+money:=500;
 repeat
 randomize;
 clrscr;
-a:=random(3)+1;
+firstFruit:=random(3)+1;
 gotoxy(20,12);
-if a=1 then writeln('alma');
-if a=2 then writeln('szilva');
-if a=3 then writeln('cseresznye');
-b:=random(3)+1;
+if firstFruit=1 then writeln('alma');
+else if firstFruit=2 then writeln('szilva');
+else if firstFruit=3 then writeln('cseresznye');
+secondFruit:=random(3)+1;
 gotoxy(35,12);
-if b=1 then writeln('alma');
-if b=2 then writeln('szilva');
-if b=3 then writeln('cseresznye');
-c:=random(3)+1;
+if secondFruit=1 then writeln('alma');
+else if secondFruit=2 then writeln('szilva');
+else if secondFruit=3 then writeln('cseresznye');
+thirdFruit:=random(3)+1;
 gotoxy(50,12);
-if c=1 then writeln('alma');
-if c=2 then writeln('szilva');
-if c=3 then writeln('cseresznye');
+if thirdFruit=1 then writeln('alma');
+else if thirdFruit=2 then writeln('szilva');
+else if thirdFruit=3 then writeln('cseresznye');
 gotoxy(35,20);
-penz:=penz-30;
-writeln(penz);
+money:=money-30;
+writeln(money);
 gotoxy(35,25);
-if (a=b) and (b=c) then
+if (firstFruit=secondFruit) and (secondFruit=thirdFruit) then
   begin
   writeln('nyert‚l!');
-  penz:=penz+100;
+  money:=money+100;
   end;
-if penz=0 then writeln('vesztett‚l!');
+if money=0 then writeln('vesztett‚l!');
 
-readln(szoveg);
-until (szoveg='q') or (penz=0);
+readln(input);
+until (input='q') or (money=0);
 end.
