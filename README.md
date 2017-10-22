@@ -1,4 +1,4 @@
-# felkaru_rablo
+# ConsoleSlothMachineInPascal
 
 
 About:
